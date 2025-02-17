@@ -1,7 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-svale=1.0">
+    <title>Federico Dell'Aquila</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Federico Dell'Aquila</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Game Programmer</p>
+            <h1>Hi, I'm <span>Federico Dell'Aquila</span> from Italy.</h1>
+        </div>
+    </div>
+</div>
+<!-- --------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- <img src="resources/user.jpg"> -->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum."</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Game Engines</span><br>Unreal Engine 5 and Unity</li>
+                        <li><span>Programming Languages</span><br>C++ and C#</li>
+                        <li><span>3D Modeling</span><br>Blender</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - 2025 [Rome, Italy · Remote]</span><br>Unreal Engine 5 Programmer at Red Hog Studio</li>
+                        <li><span>2022 - 2023 [Braşov, Romania · On-site]</span><br>Unity Programmer at NEOMORPH Studio</li>
+                        <li><span>2021 - 2022 [Braşov, Romania · On-site]</span><br>Internship at NEOMORPH Studio as Junior Unity Programmer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018 - 2022 [Breda, Netherlands]</span><br>Breda University of Applied Sciences</li>
+                        <li><span>2018 - 2022 [Rome, Italy]</span><br>Vigamus Academy</li>
+                        <li><span>2015 - 2018 [Rome, Italy]</span><br>Roma Tre University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>English</span><br>IELTS Certificate B1</li>
+                        <li><span>Italian</span><br>Native speaker</li>
+                        <li><span>French</span><br>Read and Listening</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
