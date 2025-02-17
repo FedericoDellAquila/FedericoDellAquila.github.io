@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-<!-- https://youtu.be/0YFrGy_mzjY?t=4032 -->
-
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Federico Dell'Aquila</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/21b25eb212.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,12 +15,12 @@
         <nav>
             <img src="resources/logo.jpg" class="logo">
             <ul id="sidemenu">
-                <li><a href="#">Home</a></li>
+                <li><a href="#header">Home</a></li>
                 <!-- <li><a href="#">Services</a></li> -->
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -77,13 +75,63 @@
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="resources/work-2.jpg">
                 <div class="layer">
                     <h3>The Engineer</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-3.jpg">
+                <div class="layer">
+                    <h3>Levis Umbra</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-3.jpg">
+                <div class="layer">
+                    <h3>Levis Umbra</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-3.jpg">
+                <div class="layer">
+                    <h3>Levis Umbra</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-3.jpg">
+                <div class="layer">
+                    <h3>Levis Umbra</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work-3.jpg">
+                <div class="layer">
+                    <h3>Levis Umbra</h3>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
@@ -115,10 +163,7 @@
                 <h1 class="sub-title">About me</h1>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum."</p>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -169,21 +214,22 @@
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/federico-dellaquila" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://x.com/FedericoA11208" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://github.com/FedericoDellAquila" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
                 <a href="resources/CV.pdf" target="_blank" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="0e79b6d6-37ba-453c-bfb0-8c5f3eb52296">
+
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="text" name="email" placeholder="Your email" required>
+                    <input type="text" name="Email" placeholder="Your email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="Submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Federico Dell'Aquila.</p>
     </div>
 </div>
 
@@ -217,6 +263,23 @@
         sidemenu.style.right = "-200px";
     }
 
+</script>
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const response = await fetch("/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            })
+        });
+        const result = await response.json();
+        document.getElementById("response").textContent = result.message;
+    });
 </script>
 
 </body>
