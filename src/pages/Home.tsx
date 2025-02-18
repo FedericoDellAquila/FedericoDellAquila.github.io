@@ -1,28 +1,9 @@
 import { MouseEvent } from "react";
-import { logo, user, work1, work2, work3 } from "../assets/index";
+import { user, work1, work2, work3 } from "../assets/index";
 import "../index.css";
+import NavBar from "../components/NavBar/NavBar";
 
 export default function Home() {
-  const sidemenu = document.getElementById("sidemenu");
-
-  const handleOpenMenu = () => {
-    if (!sidemenu) {
-      console.log("Failed to find sidemenu");
-      return;
-    }
-
-    sidemenu.style.right = "0";
-  };
-
-  const handleCloseMenu = () => {
-    if (!sidemenu) {
-      console.log("Failed to find sidemenu");
-      return;
-    }
-
-    sidemenu.style.right = "-200px";
-  };
-
   const tablinks = document.getElementsByClassName("tab-links");
   const tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -41,28 +22,7 @@ export default function Home() {
     <>
       <div id="header">
         <div className="container">
-          <nav>
-            <img src={logo} className="logo" />
-            <ul id="sidemenu">
-              <li>
-                <a href="#header">Home</a>
-              </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <i className="fa-solid fa-times" onClick={handleCloseMenu}></i>
-            </ul>
-            <i className="fa-solid fa-bars" onClick={handleOpenMenu}></i>
-          </nav>
+          <NavBar />
           <div className="header-text">
             <p>Game Programmer</p>
             <h1>
