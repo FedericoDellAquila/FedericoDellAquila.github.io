@@ -1,16 +1,16 @@
 const swconf = {
   
-    cacheName: 'chirpy-1740077435',resources: [
-      '/assets/css/jekyll-theme-chirpy.css',
-      '/',
+    cacheName: 'chirpy-1740079919',resources: [
+      '/https://FedericoDellAquila.github.io/blog/assets/css/jekyll-theme-chirpy.css',
+      '/https://FedericoDellAquila.github.io/blog/',
       
-        '/categories/',
+        '/https://FedericoDellAquila.github.io/blog/categories/',
       
-        '/tags/',
+        '/https://FedericoDellAquila.github.io/blog/tags/',
       
-        '/archives/',
+        '/https://FedericoDellAquila.github.io/blog/archives/',
       
-        '/about/',
+        '/https://FedericoDellAquila.github.io/blog/about/',
       
 
       
