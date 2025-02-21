@@ -4,7 +4,7 @@
     "url": "/blog/posts/customize-the-favicon/",
     "categories": "Blogging, Tutorial",
     "tags": "favicon",
-    "date": "2019-08-11 00:34:00 +0800",
+    "date": "2019-08-10 18:34:00 +0200",
     "content": "The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons..."
   },
   {
@@ -12,7 +12,7 @@
     "url": "/blog/posts/getting-started/",
     "categories": "Blogging, Tutorial",
     "tags": "getting started",
-    "date": "2019-08-09 20:55:00 +0800",
+    "date": "2019-08-09 14:55:00 +0200",
     "content": "Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server."
   },
   {
@@ -20,7 +20,7 @@
     "url": "/blog/posts/write-a-new-post/",
     "categories": "Blogging, Tutorial",
     "tags": "writing",
-    "date": "2019-08-08 14:10:00 +0800",
+    "date": "2019-08-08 08:10:00 +0200",
     "content": "This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and..."
   },
   {
@@ -28,7 +28,7 @@
     "url": "/blog/posts/text-and-typography/",
     "categories": "Blogging, Demo",
     "tags": "typography",
-    "date": "2019-08-08 11:33:00 +0800",
+    "date": "2019-08-08 05:33:00 +0200",
     "content": "Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more."
   }
   
